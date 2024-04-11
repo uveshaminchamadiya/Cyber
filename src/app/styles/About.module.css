@@ -1,0 +1,100 @@
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    width: 80%;
+}
+
+.companyDetails {
+    display: flex;
+    padding: 40px 0px;
+}
+
+.companyDetails .details {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.companyDetails .details .heading {
+    color: rgb(0, 0, 0);
+    font-family: Inter;
+    font-size: 54px;
+    font-weight: 600;
+    line-height: 64px;
+    letter-spacing: 6%;
+    text-align: justify;
+}
+
+.companyDetails .details .desc {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.companyDetails .details .desc p {
+    color: rgb(0, 0, 0);
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.companyDetails .image {
+    width: 50%;
+    display: flex;
+    justify-content: end;
+}
+
+.companyDetails .image .img{
+    width: 500px;
+    border-radius: 5px;
+}
+
+.teamDetails {
+    margin: 40px;
+    display: flex;
+}
+
+.teamDetails .card {
+    width: 33.33%;
+    box-sizing: border-box;
+    margin: 0px 10px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.teamDetails .card .image {
+    width: 100%;
+    background: rgba(245, 245, 245, 1);
+    display: flex;
+    justify-content: center;
+}
+
+.teamDetails .card .name {
+    color: rgb(0, 0, 0);
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 4%;
+    text-align: left;
+}
+
+.teamDetails .card .designation {
+    color: rgb(0, 0, 0);
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: left;
+}

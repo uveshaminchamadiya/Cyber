@@ -1,0 +1,84 @@
+.container .content{
+    width: 80%;
+    margin: 40px auto;
+}
+
+.container .content .title{
+    font-size: 24px;
+    font-weight: bold;
+    font-family: SF Pro Display;
+}
+
+.container .content .contactForm {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .content .contactForm form{
+    width: 100%;
+    padding: 20px;
+    box-shadow: rgba(149, 157, 165, 0.5) 0px 8px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 5px;
+}
+
+.container .content .contactForm .form .inputGroup {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0px;
+    gap: 5px;
+}
+
+.container .content .contactForm .form .lbl {
+    font-family: SF Pro Display;
+    font-weight: 900;
+}
+
+.container .content .contactForm .form .input input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    background: rgb(247, 247, 247);
+    border: 1px solid #333;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.container .content .contactForm .form .input img {
+   width: 150px;
+   height: 150px;
+}
+
+.container .content .contactForm .form .input input::placeholder {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.container .content .contactForm .form .btn button {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 900;
+    padding: 10px 30px;
+    background-color: #229f64;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+.container .content .contactForm .form .btn button:hover {
+    background-color: #198754;
+    cursor: pointer;
+}

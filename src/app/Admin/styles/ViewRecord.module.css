@@ -1,0 +1,106 @@
+.navbar {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    padding: 30px 20px;
+    display: flex;
+}
+
+.navbar .brand {
+    width: 50%;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: SF Pro Display;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.navbar .brand a {
+    text-decoration: none;
+    color: black;
+}
+
+.navbar .admin {
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-family: SF Pro Display;
+    font-size: 20px;
+}
+
+.addBtn{
+    margin-top: 10px;
+    padding: 20px 30px;
+}
+
+.addBtn span a{
+    background-color: #198754;
+    border-radius: 5px;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.addBtn span a:hover{
+    background-color: #229f64;
+}
+
+.container .content {
+    width: 90%;
+    margin: 20px auto;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    border-radius: 10px;
+}
+
+.container .content .rowH {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.container .content .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.container .content .rowH .colH {
+    font-weight: bold;
+    font-family: SF Pro Display;
+    width: 100%;
+    text-align: center;
+}
+
+.container .content .row .col {
+    font-family: SF Pro Display;
+    width: 100%;
+    text-align: center;
+}
+
+.container .content .row .col img{
+    width: 100px;
+}
+
+.container .content .row .col .btn{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.container .content .row .col .btn .edit{
+   text-decoration: none;
+}
+
+.container .content .row .col .btn .delete{
+   text-decoration: none;
+}
+
+.container .content .row .col .btn .edit svg{
+   color: blue;
+}
+
+.container .content .row .col .btn .delete svg{
+   color: red;
+}

@@ -1,0 +1,105 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .content {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgb(247, 247, 247);
+    margin: 30px auto;
+    border-radius: 10px;
+    gap: 10px;
+    padding: 20px 0px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.container .content .details {
+    display: flex;
+    flex-direction: column;
+}
+
+.container .content .details .left {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 10px;
+}
+
+.container .content .details .right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+    justify-content: center;
+}
+
+.divider{
+    margin: 10px 0px;
+}
+
+.divider hr{
+    color: black;
+}
+
+.container .content .details .right .item{
+    color: rgb(0, 0, 0);
+    font-family: SF Pro Display;
+    font-size: 16px;
+}
+
+.container .content .desc {
+    color: rgb(0, 0, 0);
+    font-family: SF Pro Display;
+    font-size: 16px;
+}
+
+.container .content .img {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+}
+
+.container .content .price {
+    color: rgb(0, 0, 0);
+    font-family: SF Pro Display;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 3%;
+    text-align: center;
+}
+
+.container .content .button {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+.container .content .button .btn {
+    border-radius: 8px;
+    background: rgb(0, 0, 0);
+    padding: 10px 20px;
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3;
+    border: none;
+}
+
+.container .content .button .btn:hover {
+    background: #333;
+}

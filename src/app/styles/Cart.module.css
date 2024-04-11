@@ -1,0 +1,199 @@
+.noRecord {
+    height: calc(100vh - 60px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.container {
+    margin: 50px 0px;
+}
+
+.container .content {
+    width: 80%;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    flex-direction: column;
+}
+
+.container .content .heading {
+    color: rgb(0, 0, 0);
+    font-family: SF Pro Display;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.container .content .details {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.container .content .productDetails {
+    width: 80%;
+}
+
+.container .content .productDetails .cards {
+    margin: 20px 0px;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .content .productDetails .cards .card {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border-radius: 10px;
+    padding: 10px 10px;
+    justify-content: space-evenly;
+}
+
+.container .content .productDetails .cards .card .image img {
+    width: 100px;
+    height: 100px;
+}
+
+.container .content .productDetails .cards .card .desc {
+    color: rgb(0, 0, 0);
+    font-family: SF Pro Display;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: left;
+    width: 200px;
+}
+
+.container .content .productDetails .cards .card .quantity {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.container .content .productDetails .cards .card .quantity div button {
+    border: none;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.container .content .productDetails .cards .card .price {
+    color: rgb(0, 0, 0);
+    font-family: SF Pro Display;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 32px;
+    letter-spacing: 3%;
+    text-align: left;
+}
+
+.container .content .productDetails .cards .card .delete .button {
+    background-color: white;
+    outline: none;
+    border: none;
+
+}
+
+.container .content .productDetails .cards .card .delete svg {
+    color: red;
+    cursor: pointer;
+}
+
+.container .content .details .orderSummary {
+    width: 80%;
+    padding: 20px 20px;
+    box-sizing: border-box;
+    border: 1px solid rgb(235, 235, 235);
+    border-radius: 10px;
+    height: fit-content;
+
+}
+
+.container .content .details .orderSummary .content {
+    display: flex;
+    padding: 20px 0px;
+    width: 100%;
+}
+
+.container .content .details .orderSummary .content .heading {
+    color: rgb(17, 17, 17);
+    font-family: SF Pro Display;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.container .content .details .orderSummary .content .total {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .content .details .orderSummary .content .total .title {
+    color: rgb(0, 0, 0);
+    font-family: SF Pro Display;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 24px;
+    letter-spacing: 3%;
+    text-align: center;
+    width: 25%;
+}
+
+.container .content .details .orderSummary .content .total .img {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+}
+
+.container .content .details .orderSummary .content .total .img img {
+    width: 50px;
+    height: 50px;
+}
+
+.container .content .details .orderSummary .content .total .desc {
+    color: rgb(0, 0, 0);
+    font-family: SF Pro Display;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 3%;
+    text-align: center;
+    width: 25%;
+}
+
+.container .content .details .orderSummary .content .button {
+    display: flex;
+    justify-content: center;
+}
+
+.container .content .details .orderSummary .content .button button {
+    border-radius: 4px;
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: center;
+    padding: 10px 40px;
+    cursor: pointer;
+    border: none;
+}
+
+
+.container .content .details .orderSummary .content .button button:hover {
+    background: #333;
+}

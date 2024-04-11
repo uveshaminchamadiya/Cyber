@@ -1,0 +1,69 @@
+.container {
+    background: rgb(0, 0, 0);
+    padding: 40px;
+}
+
+.container .content {
+    width: 80%;
+    margin: 0px auto;
+    display: flex;
+}
+
+.container .content .items {
+    width: 33.33%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container .content .items .logo {
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+}
+
+.container .content .items .desc {
+    color: rgb(207, 207, 207);
+    font-family: SF Pro Display;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0%;
+    text-align: left;
+    width: 70%;
+}
+
+.container .content .items .icons {
+    color: white;
+}
+
+.container .content .items .icons ul {
+    display: flex;
+    gap: 20px;
+}
+
+.container .content .items .icons ul li {
+    list-style: none;
+}
+
+.container .content .items ul li {
+    list-style: none;
+    color: rgb(207, 207, 207);
+    font-family: SF Pro Display;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 32px;
+    letter-spacing: 0%;
+    text-align: left;
+    cursor: pointer;
+}
+
+.container .content .items ul .linkHeading {
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-bottom: 10px;
+    cursor: none;
+}

@@ -1,0 +1,18 @@
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.content{
+    width: 80%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.content .heading{
+    font-weight: bold;
+    font-size: 24px;
+    font-family: SF Pro Display;
+}

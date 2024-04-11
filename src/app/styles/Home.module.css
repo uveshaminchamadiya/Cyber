@@ -1,0 +1,170 @@
+.container {
+    background: linear-gradient(94.53deg, rgb(33, 28, 36) 0.79%, rgb(33, 28, 36) 100.883%);
+    display: flex;
+    height: 100vh;
+}
+
+.container .content {
+    width: 50%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.wrapper {
+    width: 80%;
+    margin: 0px auto;
+}
+
+.container .content .tag {
+    color: rgb(255, 255, 255);
+    font-family: Figtree;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.container .content .title {
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 80px;
+    line-height: 72px;
+    text-align: left;
+    font-weight: 100;
+    margin-top: 20px;
+}
+
+.container .content .title span {
+    font-weight: bold;
+}
+
+.container .content .desc {
+    margin-top: 20px;
+    color: rgb(145, 145, 145);
+    font-family: SF Pro Display;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.container .content .wrapper .btn {
+    box-sizing: border-box;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 6px;
+    margin-top: 20px;
+    padding: 10px 30px;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.container .content .wrapper .btn span {
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.container .image {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.container .image img {
+    width: 400px;
+    height: 400px;
+}
+
+.section2Container {
+    display: flex;
+}
+
+.section2Container .left {
+    width: 50%;
+    display: flex;
+}
+
+.section2Container .left .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 20px;
+    gap: 10px;
+}
+
+.section2Container .left .image .img{
+    width: 250px;
+    height: 100%;
+}
+
+.section2Container .left .content .title {
+    color: rgb(0, 0, 0);
+    font-family: SF Pro Display;
+    font-size: 49px;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.section2Container .left .content .desc {
+    color: rgb(145, 145, 145);
+    font-family: SF Pro Display;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.section2Container .right {
+    width: 50%;
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: rgb(237, 237, 237);
+    gap: 20px;
+}
+
+.section2Container .right .title {
+    color: rgb(0, 0, 0);
+    font-family: SF Pro Display;
+    font-size: 64px;
+    font-weight: 100;
+    line-height: 56px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.section2Container .right .title span{
+    font-weight: bold;
+}
+
+.section2Container .right .btn{
+    box-sizing: border-box;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 6px;    
+    padding: 10px 30px;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.section2Container .right .btnsspan{
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: center;
+}

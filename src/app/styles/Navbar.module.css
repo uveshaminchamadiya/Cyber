@@ -1,0 +1,84 @@
+.container {
+    display: flex;
+    height: 60px;
+    padding: 0px 20px;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.container .logo {
+    width: 50%;
+    font-size: 24px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.container .logo a {
+    text-decoration: none;
+    color: black;
+}
+
+.container .navItems {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.container .navItems ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.container .navItems ul a {
+    text-decoration: none;
+}
+
+.container .navItems ul li {
+    list-style: none;
+    color: rgb(0, 0, 0);
+    font-family: SF Pro Display;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.container .navItems ul li:hover {
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.logout {
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.logout:hover {
+    background-color: #cc0000;
+}
+
+.login {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login:hover {
+    background-color: #0056b3;
+}

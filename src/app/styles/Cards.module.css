@@ -1,0 +1,71 @@
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    border-radius: 10px;
+    background: rgb(247, 247, 247);
+    width: calc(33.33% - 10px);
+    box-sizing: border-box;
+    padding: 20px;
+    margin: 5px 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.card img{
+    width: 150px;
+    height: 150px;
+}
+
+.card .title {
+    color: rgb(0, 0, 0);
+    font-family: SF Pro Display;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.card .price {
+    color: rgb(0, 0, 0);
+    font-family: SF Pro Display;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 3%;
+    text-align: center;
+}
+
+.card .btn {
+    border-radius: 8px;
+    background: rgb(0, 0, 0);
+    padding: 10px 20px;
+    transition: 0.3;
+    cursor: pointer;
+}
+
+.card .btn a{
+    text-decoration: none;
+}
+
+.card .btn:hover{
+    background: #333;
+}
+
+.card .btn span{
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+}
