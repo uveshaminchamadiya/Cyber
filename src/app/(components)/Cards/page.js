@@ -1,22 +1,17 @@
 'use client'
-import { getDataHome } from "../../contoller/contoller"
+import { getData } from "../../contoller/contoller"
 import { useState, useEffect } from "react";
 import styles from "../../styles/Cards.module.css"
 import Link from "next/link";
 
 const Cards = () => {
 
-  type ItemType = {
-    _id: string;
-    image: string;
-    desc: string;
-    price: number;
-  };
+  // Define the state without TypeScript types
+  const [data, setData] = useState([]);
 
-  const [data, setData] = useState<ItemType[]>([]);
   const fetchData = async () => {
     try {
-      const jsonData = await getDataHome();
+      const jsonData = await getData();
       setData(jsonData);
     } catch (error) {
       console.log("Error while loading data: ", error);
@@ -29,7 +24,7 @@ const Cards = () => {
 
   const userDetails = localStorage.getItem('UserDetails');
 
-  const redirectUrl = (myUrl: string) => {
+  const redirectUrl = (myUrl) => {
     if (!userDetails) {
         localStorage.setItem('RedirectUrl', JSON.stringify(myUrl));
     }
@@ -44,9 +39,10 @@ const Cards = () => {
             <div className={styles.title}>
               {item.desc}
             </div>
-            <div className={styles.price}>${item.price}</div>
+            <div className={styles.price}>${item.price}</div>       
             <div className={styles.btn}>
-            <Link href={`/ProductDetails/${item._id}`}><span onClick={() => redirectUrl(`${item._id}`)}>Buy Now</span></Link>
+              {/* <span onClick={() => redirectUrl(`${item._id}`)}><Link href={`/ProductDetails/${item._id}`}>Buy Now</Link></span> */}
+              <Link href={`/ProductDetails/${item._id}`}><span onClick={() => redirectUrl(`${item._id}`)}>Buy Now</span></Link>
             </div>
           </div>
         )

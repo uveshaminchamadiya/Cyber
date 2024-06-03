@@ -1,6 +1,5 @@
 import Layout from "../../Layout/page"
 import styles from "../../styles/About.module.css"
-import Image from "next/image"
 
 const About = () => {
   return (

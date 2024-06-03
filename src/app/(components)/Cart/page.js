@@ -1,33 +1,24 @@
-"use client"
+'use client'
 import Layout from "@/app/Layout/page"
 import styles from "../../styles/Cart.module.css"
 import { getRecord, deleteProduct } from "../../contoller/cart.contoller"
 import { useEffect, useState } from "react"
 import Link from "next/link"
 
-
 const Cart = () => {
-    type ItemType = {
-        _id: string;
-        image: string;
-        desc: string;
-        price: number;
-    };
-
-    const [data, setData] = useState<ItemType[]>([]);
+    const [data, setData] = useState([]);
     console.log("Data : ", data)
-    const [quantities, setQuantities] = useState<number[]>([]);
+    const [quantities, setQuantities] = useState([]);
     console.log("Qty : ", quantities)
-    const [orderDetails, setOrderDetails] = useState({ data: [], quantities: [] })
+    const [orderDetails, setOrderDetails] = useState({ data: [], quantities: [] });
     console.log("orderDetails : ", orderDetails)
 
     const UserDetails = localStorage.getItem('UserDetails');
-    const paresedUserDetails = JSON.parse(UserDetails);
-    const id = paresedUserDetails._id;
+    const parsedUserDetails = JSON.parse(UserDetails);
+    const id = parsedUserDetails._id;
 
     const qty = localStorage.getItem(id);
-    const parsedQty = JSON.parse(qty)
-
+    const parsedQty = JSON.parse(qty);
 
     let subTotal = 0;
     let total = 0;
@@ -48,17 +39,15 @@ const Cart = () => {
         }
     }
 
-
     useEffect(() => {
         getData();
     }, []);
-
 
     useEffect(() => {
         localStorage.setItem(id, JSON.stringify(quantities));
     }, [quantities]);
 
-    const qtyDes = (index: number) => {
+    const qtyDes = (index) => {
         if (quantities[index] > 1) {
             setQuantities(prevQuantities => {
                 const updatedQuantities = [...prevQuantities];
@@ -68,7 +57,7 @@ const Cart = () => {
         }
     }
 
-    const qtyInc = (index: number) => {
+    const qtyInc = (index) => {
         setQuantities(prevQuantities => {
             const updatedQuantities = [...prevQuantities];
             updatedQuantities[index] += 1;
@@ -92,21 +81,18 @@ const Cart = () => {
     }
 
     const handleCheckout = () => {
-        setOrderDetails({data: data, quantities: quantities})
+        setOrderDetails({ data: data, quantities: quantities });
         localStorage.setItem(`OD${id}`, JSON.stringify(orderDetails));
     }
 
-
-    const records = data.length
+    const records = data.length;
 
     if (records <= 0) {
         return (
             <Layout>
-                <>
-                    <div className={styles.noRecord}>
-                        Your cart is empty!
-                    </div>
-                </>
+                <div className={styles.noRecord}>
+                    Your cart is empty!
+                </div>
             </Layout>
         )
     } else {
@@ -178,22 +164,20 @@ const Cart = () => {
                                         data.map((item, index) => {
                                             productPrice = parseInt(item.price) * quantities[index];
                                             return (
-                                                <>
-                                                    <div className={styles.total}>
-                                                        <div className={styles.img}>
-                                                            <img src={`http://localhost:3000/img/${item.image}`} alt={item.image} />
-                                                        </div>
-                                                        <div className={styles.desc}>
-                                                            ${item.price}
-                                                        </div>
-                                                        <div className={styles.desc}>
-                                                            {quantities[index]}
-                                                        </div>
-                                                        <div className={styles.title}>
-                                                            ${productPrice}
-                                                        </div>
+                                                <div className={styles.total} key={index}>
+                                                    <div className={styles.img}>
+                                                        <img src={`http://localhost:3000/img/${item.image}`} alt={item.image} />
                                                     </div>
-                                                </>
+                                                    <div className={styles.desc}>
+                                                        ${item.price}
+                                                    </div>
+                                                    <div className={styles.desc}>
+                                                        {quantities[index]}
+                                                    </div>
+                                                    <div className={styles.title}>
+                                                        ${productPrice}
+                                                    </div>
+                                                </div>
                                             )
                                         })
                                     }
@@ -221,6 +205,6 @@ const Cart = () => {
             </Layout>
         )
     }
-
 }
+
 export default Cart;
